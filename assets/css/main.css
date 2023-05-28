@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pridi:wght@600&display=swap");
+
+:root {
+  --main-color: #9370db;
+  --sub-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: -webkit-linear-gradient(transparent, var(--main-color));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-dark-80 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-gdark-80 {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color) -100%,
+    rgba(0, 0, 0, 0.404),
+    var(--main-color) 200%
+  );
+}
+
+.text-white\/60 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gscale {
+  filter: grayscale(100%);
+  transition: all 0.8s ease;
+}
+
+.gscale:hover {
+  filter: grayscale(0%);
+}
+
+.bg-cover-img {
+  /* position: fixed; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -10;
+}
+
+.bg-cover-img > .container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  min-height: 100vh;
+  transition: all 0.8s ease-in-out;
+}
+
+.bg-cover-img > .container > .div-end {
+  width: 45%;
+  height: auto;
+  /* background-color: #000000; */
+}
+
+.bg-cover-img > .container > .div-end span {
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+}
+
+.bg-cus {
+  background-color: #f3f4f6;
+}
+
+.btn-cus\/main {
+  font-size: 20px;
+  color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 1vh;
+  border: 1.5px dashed var(--main-color);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.btn-cus\/main:hover {
+  color: #fff;
+  border: 1.5px solid var(--main-color);
+  background-color: var(--main-color);
+}
+
+.btn-cus\/discord {
+  font-size: 20px;
+  color: #43549f;
+  padding: 5px 10px;
+  border-radius: 1vh;
+  border: 1.5px dashed #43549f;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.btn-cus\/discord:hover {
+  color: #fff;
+  border: 1.5px solid #43549f;
+  background-color: #43549f;
+}
+
+.zoom-hover {
+  transition: all 0.5s ease;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  width: 100%;
+  min-height: 20vh;
+  max-height: auto;
+  transition: all 0.8s ease;
+}
+
+.main-text {
+  color: var(--main-color);
+}
+
+.container-custom {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.6s ease;
+}
+@media (min-width: 768px) {
+  .container-custom {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-custom {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-custom {
+    width: 1500px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bg-cover-img > .container > .div-end {
+    width: 100%;
+    height: auto;
+  }
+}
